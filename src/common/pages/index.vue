@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const router = useRouter()
 const go = () => {
-  router.push('/users/home')
+  router.push('/blog')
 }
 
 const { t } = useI18n()
@@ -33,7 +33,7 @@ const { t } = useI18n()
         class="m-3 text-sm btn"
         @click="go"
       >
-        {{ t('button.go') }}
+        {{ t('button.my-blog') }}
       </button>
     </div>
   </div>
