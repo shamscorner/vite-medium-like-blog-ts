@@ -50,6 +50,29 @@ and that's it. Everything has been moved into the `common/` folder (global setti
 - `pages/`
 - `stores/`
 
+You can also change the meta information of any page as your requirements. For example, you can follow the `App.vue` file to add on your own.
+
+```js
+<script setup lang="ts">
+import { useHead } from '@vueuse/head'
+
+// https://github.com/vueuse/head
+// you can use this to manipulate 
+// the document head in any components,
+// they will be rendered correctly in the 
+// html results with vite-ssg
+useHead({
+  title: 'Medium Like Blog (Vue + Vite)',
+  meta: [
+    { 
+      name: 'description', 
+      content: 'A Medium like blog using Vue 3 + Vite + Ts' 
+    },
+  ],
+})
+</script>
+```
+
 I will highly recommend you to try [Vitesse](https://github.com/antfu/vitesse) using [monolithic architecture](https://en.wikipedia.org/wiki/Monolithic_application) first. Then you can move to my repo https://github.com/shamscorner/vitesse-stackter-clean-architect when you feel comfortable.
 
 Have fun! 🙂
