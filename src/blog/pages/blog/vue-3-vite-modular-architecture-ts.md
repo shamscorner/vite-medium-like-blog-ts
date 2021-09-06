@@ -6,17 +6,26 @@ cover:
   alt: Opinionated Vite + Typescript starter template with modular architecture pattern.
 author:
   name: Shamim Hossain
-  profileImage: /me.jpg
+  profileImage: /me.webp
   about: Full-stack Web & Mobile developer (Laravel, Vue/Nuxt, Node, Flutter) | Computer Science Engineer | Tech Enthusiast
   links:
     - https://www.linkedin.com/in/shamscorner
     - https://www.facebook.com/shamscorner
     - https://twitter.com/shamscorner
     - mailto:hossains159@gmail.com
-readTime: 5 min
+readTime: 5 mins
+createdAt: September 6, 2021
 ---
 
 <Navbar />
+<BlogScaffold 
+  :title="frontmatter.title" 
+  :description="frontmatter.description" 
+  :author="frontmatter.author"
+  :cover="frontmatter.cover"
+  :read-time="frontmatter.readTime"
+  :created-at="frontmatter.createdAt"
+/>
 
 ### 👋 Hi Vuers!
 
