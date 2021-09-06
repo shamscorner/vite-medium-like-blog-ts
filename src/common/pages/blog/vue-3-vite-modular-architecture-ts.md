@@ -16,6 +16,8 @@ author:
 readTime: 5 min
 ---
 
+<Navbar />
+
 ### 👋 Hi Vuers!
 
 If you are really into the [Vitesse](https://github.com/antfu/vitesse) (Vite + Vue3 + Typescript + Pinia + auto import + layouts + pages + icons + pnpm + file based routing + pwa + windicss(tailwindcss) + icons + i18n + markdown + ssg + critical css, and many more) starter template created by [Anthony Fu](https://github.com/antfu) (Vue core team member) but want to use the [modular architectural pattern](https://en.wikipedia.org/wiki/Module_pattern) instead of [monolithic architecture](https://en.wikipedia.org/wiki/Monolithic_application), then you can clone the following repo and use your own project. I have changed some of the setups in the [Vitesse](https://github.com/antfu/vitesse) repo and created my own architecture ([modular approach](https://en.wikipedia.org/wiki/Module_pattern)). I am loving it so far and have used some of my projects.
