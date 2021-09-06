@@ -71,6 +71,47 @@
         <div>&bull;</div>
         <div>{{ props.readTime }} read</div>
       </div>
+      <!-- share options -->
+      <div class="relative group">
+        <button
+          class="text-gray-500 transition rounded  hover:text-yellow-600 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-4"
+        >
+          <carbon-link class="w-6 h-6" />
+        </button>
+        <div
+          class="absolute top-0 right-0 z-50 hidden p-4 transition bg-white dark:bg-dark-200 border border-gray-200 rounded shadow-xl  group-hover:block"
+        >
+          <ShareNetwork
+            network="twitter"
+            :url="articleFullPath"
+            :title="props.title"
+            :description="props.description"
+            twitter-user="shamscorner"
+          >
+            <DropdownItem class="my-3">
+              <mdi-twitter class="w-5 h-5" />
+              <div>Twitter</div>
+            </DropdownItem>
+          </ShareNetwork>
+          <ShareNetwork
+            network="facebook"
+            :url="articleFullPath"
+            :title="props.title"
+            :description="props.description"
+            twitter-user="shamscorner"
+          >
+            <DropdownItem class="my-3">
+              <mdi-facebook class="w-5 h-5" />
+              <div>Facebook</div>
+            </DropdownItem>
+          </ShareNetwork>
+          <DropdownItem class="my-3" @click="copyToClipboard">
+            <mdi-check-circle v-if="isUrlCopied" class="w-5 h-5" />
+            <mdi-content-copy v-else class="w-5 h-5" />
+            <div>{{ isUrlCopied ? 'Copied' : 'Copy' }}</div>
+          </DropdownItem>
+        </div>
+      </div>
     </div>
 
     <!-- cover image -->
@@ -96,6 +137,8 @@
 </template>
 
 <script setup lang="ts">
+const router = useRouter()
+
 interface Author {
   name: string
   profileImage: string
@@ -113,6 +156,17 @@ interface Prop {
   createdAt: string
   readTime: string
   cover: CoverImage
+  twitterUsername: string
 }
-const props = defineProps<Prop>()
+const props = withDefaults(defineProps<Prop>(), {
+  twitterUsername: '',
+})
+
+const isUrlCopied = ref(false)
+const articleFullPath = computed(() => `${window.location.origin}${router.currentRoute.value.path}`)
+
+const copyToClipboard = () => {
+  navigator.clipboard.writeText(articleFullPath.value)
+  isUrlCopied.value = true
+}
 </script>

@@ -18,13 +18,14 @@ createdAt: September 6, 2021
 ---
 
 <Navbar />
-<BlogScaffold 
+<BlogScaffold
   :title="frontmatter.title" 
   :description="frontmatter.description" 
   :author="frontmatter.author"
   :cover="frontmatter.cover"
   :read-time="frontmatter.readTime"
   :created-at="frontmatter.createdAt"
+  twitter-username="shamscorner"
 />
 
 ### 👋 Hi Vuers!
