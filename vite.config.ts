@@ -14,7 +14,7 @@ import Prism from 'markdown-it-prism'
 // @ts-expect-error missing types
 import LinkAttributes from 'markdown-it-link-attributes'
 
-const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
+const markdownWrapperClasses = 'prose prose-lg m-auto text-left'
 
 export default defineConfig({
   resolve: {
