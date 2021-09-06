@@ -11,9 +11,9 @@
     m="x-auto"
     p="y-2.5 x-4"
     z="50"
-    bg="gray-50"
+    bg="gray-50 dark:dark-400"
     shadow="sm"
-    border="b gray-100"
+    border="b gray-100 dark:dark-500"
   >
     <!-- left container -->
     <div>
@@ -25,16 +25,17 @@
       >
         <router-link
           to="/"
-          class="transition border rounded-full focus:(outline-none ring-2 ring-gray-300 ring-offset-2)"
+          class="transition rounded-full focus:(outline-none ring-2 ring-teal-300)"
           p="2"
           hover="text-gray-800"
+          border="~ dark:dark-50"
         >
           <carbon-campsite w="6" h="6" />
         </router-link>
         <div>
           <a
             :href="`mailto:${email}`"
-            class="text-sm sm:text-base transition rounded-full focus:(outline-none ring-2 ring-gray-300 ring-offset-2)"
+            class="text-sm sm:text-base transition rounded-full focus:(outline-none ring-2 ring-teal-300)"
             p="x-1"
             font="medium"
             hover="text-gray-800"
@@ -57,11 +58,11 @@
             text-sm
             rounded-full
             transition
-            focus:outline-none
+            focus:(outline-none ring-2 ring-teal-300)
           "
           p="x-2 y-0.5"
-          hover="bg-gray-400 text-white"
-          ring="2 gray-400"
+          hover="bg-gray-400 text-white dark:bg-dark-50"
+          ring="2 teal-500"
           style="text-decoration: none;"
         >
           Blog
@@ -100,7 +101,7 @@
           />
         </svg>
       </router-link>
-      <router-link to="/" class="hidden sm:block">
+      <router-link to="/" class="hidden sm:block outline-none">
         <VButton> Let's Talk </VButton>
       </router-link>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <button
-    class="m-3 text-sm btn"
+    class="text-sm btn"
   >
     <slot></slot>
   </button>
