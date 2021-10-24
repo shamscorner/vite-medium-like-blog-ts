@@ -1,10 +1,4 @@
 <script setup lang="ts">
-import { useRouter } from 'vue-router'
-const router = useRouter()
-const go = () => {
-  router.push('/blog')
-}
-
 const { t } = useI18n()
 </script>
 
@@ -28,7 +22,7 @@ const { t } = useI18n()
     <div class="py-4" />
 
     <div>
-      <button class="m-3 text-sm btn" @click="go">{{ t('button.my-blog') }}</button>
+      <router-link to="/blog" class="m-3 text-sm btn">{{ t('button.my-blog') }}</router-link>
     </div>
   </div>
 </template>

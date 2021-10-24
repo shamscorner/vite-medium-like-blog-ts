@@ -14,6 +14,10 @@ Medium like blog template made with (Vue 3 + Typescript) with Dark mode.
 
 <br>
 
+# Introduction
+
+This template is made by [Vitesse](https://github.com/antfu/vitesse) starter template. It has a pretty great setup with markdown support out of the box. Check out the [github repository](https://github.com/antfu/vitesse) for more information.
+
 ## Usage
 
 Clone this repository and install [pnpm](https://pnpm.io/)
@@ -46,6 +50,7 @@ And you will see the generated file in `dist` that ready to be served.
 - src
   - blog
     - components
+      - BlogScaffold.vue
     - pages
       - blog
         - data.json
@@ -56,6 +61,7 @@ And you will see the generated file in `dist` that ready to be served.
         - so on . . .
   - common
 
+Follow the provided demo markdown file under `/src/blog/pages/blog/` to setup your article. If you need to change the default design, you can change in the `/src/blog/components/BlogScaffold.vue` file. Also don't forget to add the article index object into the `/src/blog/pages/blog/data.json` file. Modify the `data.json` file according to your articles. However, keep the object structure as mentioned in the `data.json` file. Finally, you can change the home blog page if you want. You will find the file in here, `/src/blog/pages/blog/index.vue`.
 
 ### Deploy on Netlify
 
