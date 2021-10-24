@@ -9,7 +9,7 @@ Medium like blog template made with (Vue 3 + Typescript) with Dark mode.
 <br>
 
 <p align='center'>
-<a href="https://vite-vue3-clean-arch.netlify.app/" target="_blank">Live Demo</a>
+<a href="https://vite-vue3-medium-blog.netlify.app/" target="_blank">Live Demo</a>
 </p>
 
 <br>
