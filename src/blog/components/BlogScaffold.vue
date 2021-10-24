@@ -33,6 +33,32 @@ const copyToClipboard = () => {
   navigator.clipboard.writeText(articleFullPath.value)
   isUrlCopied.value = true
 }
+
+// page meta information
+useHead({
+  title: props.title,
+  meta: [
+    { name: 'description', content: props.description },
+    { name: 'og:type', content: 'article' },
+    { name: 'og:url', content: articleFullPath.value },
+    { name: 'og:title', content: props.title },
+    { name: 'og:description', content: props.description },
+    { name: 'og:image', content: props.cover.img },
+    { name: 'twitter:url', content: articleFullPath.value },
+    { name: 'twitter:title', content: props.title },
+    { name: 'twitter:description', content: props.description },
+    { name: 'twitter:image', content: props.cover.img },
+    { name: 'article:published_time', content: props.createdAt },
+    { name: 'twitter:label1', content: 'Written by' },
+    { name: 'twitter:data1', content: props.author.name },
+  ],
+  link: [
+    {
+      rel: 'canonical',
+      href: articleFullPath.value,
+    },
+  ],
+})
 </script>
 
 <template>
