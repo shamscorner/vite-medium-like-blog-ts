@@ -1,0 +1,42 @@
+[
+  {
+    "title": "A Modular Architecture Pattern in Vue 3 Project (Vite + Typescript)",
+    "description": "If you are really into the <a href=\"https://github.com/antfu/vitesse\">Vitesse</a> starter template created by Anthony Fu (Vue core team member) but want to use the modular architectural pattern instead of monolithic architecture, then you can clone this repo and use your own project.",
+    "cover": {
+      "img": "https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png",
+      "alt": "Opinionated Vite + Typescript starter template with modular architecture pattern."
+    },
+    "createdAt": "September 6, 2021",
+    "slug": "vue-3-vite-modular-architecture-ts"
+  },
+  {
+    "title": "A Modular Architecture Pattern in Vue 3 Project (Vite + Typescript)",
+    "description": "If you are really into the <a href=\"https://github.com/antfu/vitesse\">Vitesse</a> starter template created by Anthony Fu (Vue core team member) but want to use the modular architectural pattern instead of monolithic architecture, then you can clone this repo and use your own project.",
+    "cover": {
+      "img": "https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png",
+      "alt": "Opinionated Vite + Typescript starter template with modular architecture pattern."
+    },
+    "createdAt": "September 6, 2021",
+    "slug": "vue-3-vite-modular-architecture-ts"
+  },
+  {
+    "title": "A Modular Architecture Pattern in Vue 3 Project (Vite + Typescript)",
+    "description": "If you are really into the <a href=\"https://github.com/antfu/vitesse\">Vitesse</a> starter template created by Anthony Fu (Vue core team member) but want to use the modular architectural pattern instead of monolithic architecture, then you can clone this repo and use your own project.",
+    "cover": {
+      "img": "https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png",
+      "alt": "Opinionated Vite + Typescript starter template with modular architecture pattern."
+    },
+    "createdAt": "September 6, 2021",
+    "slug": "vue-3-vite-modular-architecture-ts"
+  },
+  {
+    "title": "A Modular Architecture Pattern in Vue 3 Project (Vite + Typescript)",
+    "description": "If you are really into the <a href=\"https://github.com/antfu/vitesse\">Vitesse</a> starter template created by Anthony Fu (Vue core team member) but want to use the modular architectural pattern instead of monolithic architecture, then you can clone this repo and use your own project.",
+    "cover": {
+      "img": "https://user-images.githubusercontent.com/11247099/111864893-a457fd00-899e-11eb-9f05-f4b88987541d.png",
+      "alt": "Opinionated Vite + Typescript starter template with modular architecture pattern."
+    },
+    "createdAt": "September 6, 2021",
+    "slug": "vue-3-vite-modular-architecture-ts"
+  }
+]

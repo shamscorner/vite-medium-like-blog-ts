@@ -8,7 +8,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div>
+  <div class="mt-10">
     <p class="text-4xl">
       <carbon-campsite class="inline-block" />
     </p>
@@ -18,9 +18,7 @@ const { t } = useI18n()
         href="https://github.com/antfu/vitesse"
         target="_blank"
         class="underline"
-      >
-        Vitesse
-      </a>
+      >Vitesse</a>
     </p>
     <p class="mt-4 max-w-md mx-auto">
       <em class="text-sm opacity-75">{{ t('intro.desc') }}</em>
@@ -29,12 +27,7 @@ const { t } = useI18n()
     <div class="py-4" />
 
     <div>
-      <button
-        class="m-3 text-sm btn"
-        @click="go"
-      >
-        {{ t('button.my-blog') }}
-      </button>
+      <button class="m-3 text-sm btn" @click="go">{{ t('button.my-blog') }}</button>
     </div>
   </div>
 </template>

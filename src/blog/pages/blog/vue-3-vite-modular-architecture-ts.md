@@ -17,7 +17,6 @@ readTime: 5 mins
 createdAt: September 6, 2021
 ---
 
-<Navbar />
 <BlogScaffold
   :title="frontmatter.title" 
   :description="frontmatter.description" 

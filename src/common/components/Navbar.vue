@@ -1,72 +1,39 @@
+<script setup lang="ts">
+const email = ref('john@example.com')
+const isAvailable = ref(true)
+const availableText = computed(() => isAvailable.value ? 'I\'m available' : 'I\'m not available')
+</script>
+
 <template>
   <nav
-    class="
-      flex
-      justify-between items-center
-      sticky
-      top-0
-      max-w-7xl
-      rounded-full
-    "
-    m="x-auto"
-    p="y-2.5 x-4"
-    z="50"
-    bg="gray-50 dark:dark-400"
-    shadow="sm"
-    border="b gray-100 dark:dark-500"
+    class="flex mx-auto px-4 py-2.5 justify-between items-center sticky top-0 max-w-7xl rounded-full bg-gray-50 dark:bg-dark-400 shadow-sm border-b border-gray-100 dark:border-dark-500 z-50"
   >
     <!-- left container -->
     <div>
       <!-- mail info container -->
-      <div
-        class="flex items-center space-x-3 rounded-full"
-        p="r-4"
-        text="gray-500"
-      >
+      <div class="flex pr-4 text-gray-500 items-center space-x-3 rounded-full">
         <router-link
           to="/"
-          class="transition rounded-full focus:(outline-none ring-2 ring-teal-300)"
-          p="2"
-          hover="text-gray-800"
-          border="~ dark:dark-50"
+          class="transition rounded-full p-2 border dark:border-dark-50 hover:(text-gray-800 dark:text-gray-300) focus:(outline-none ring-2 ring-teal-300)"
         >
           <carbon-campsite w="6" h="6" />
         </router-link>
         <div>
           <a
             :href="`mailto:${email}`"
-            class="text-sm sm:text-base transition rounded-full focus:(outline-none ring-2 ring-teal-300)"
-            p="x-1"
-            font="medium"
-            hover="text-gray-800"
+            class="px-1 font-medium text-sm sm:text-base transition rounded-full hover:(text-gray-800 dark:text-gray-300) focus:(outline-none ring-2 ring-teal-300)"
             style="text-decoration: none;"
-          >
-            {{ email }}
-          </a>
+          >{{ email }}</a>
           <div
-            class="block sm:hidden"
+            class="block pl-1 text-xs sm:hidden"
             :class="[isAvailable ? 'text-green-700' : 'text-red-700']"
-            p="l-1"
-            text="xs"
-          >
-            {{ availableText }}
-          </div>
+          >{{ availableText }}</div>
         </div>
         <router-link
           to="/blog"
-          class="
-            text-sm
-            rounded-full
-            transition
-            focus:(outline-none ring-2 ring-teal-300)
-          "
-          p="x-2 y-0.5"
-          hover="bg-gray-400 text-white dark:bg-dark-50"
-          ring="2 teal-500"
+          class="px-2 py-0.5 text-sm rounded-full transition ring-2 ring-teal-500 hover:(bg-teal-500 text-white) focus:(outline-none ring-2 ring-teal-300) dark:(bg-teal-500 text-white hover:bg-dark-300)"
           style="text-decoration: none;"
-        >
-          Blog
-        </router-link>
+        >Blog</router-link>
       </div>
       <!-- end of mail info container-->
     </div>
@@ -75,17 +42,12 @@
     <!-- right container -->
     <div class="flex items-center space-x-2">
       <div
-        class="hidden sm:block"
+        class="hidden text-sm font-medium sm:block"
         :class="[isAvailable ? 'text-green-700' : 'text-red-700']"
-        text="sm"
-        font="medium"
-      >
-        {{ availableText }}
-      </div>
+      >{{ availableText }}</div>
       <router-link
         to="/"
-        class="block text-gray-500 transition rounded-full  sm:hidden focus:(outline-none ring-2 ring-gray-500 ring-offset-2)"
-        hover="text-gray-600"
+        class="block text-gray-500 transition rounded-full sm:hidden hover:text-gray-600 focus:(outline-none ring-2 ring-gray-500 ring-offset-2)"
         aria-label="Let's talk"
       >
         <svg
@@ -101,16 +63,10 @@
           />
         </svg>
       </router-link>
-      <router-link to="/" class="hidden sm:block outline-none">
-        <VButton> Let's Talk </VButton>
-      </router-link>
+      <a href="https://www.shamscorner.com/" target="_blank" class="hidden sm:block outline-none">
+        <VButton>Let's Talk</VButton>
+      </a>
     </div>
     <!-- end of right container -->
   </nav>
 </template>
-
-<script setup lang="ts">
-const email = ref('john@example.com')
-const isAvailable = ref(true)
-const availableText = computed(() => isAvailable.value ? 'I\'m available' : 'I\'m not available')
-</script>
