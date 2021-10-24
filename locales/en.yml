@@ -8,3 +8,7 @@ button:
 intro:
   desc: Opinionated Vite Starter Template. Customized to support modular architecture pattern.
 not-found: Not found
+my: My
+i-am-available: I'm available
+i-am-not-available: I'm not available 
+lets-talk: Let's Talk

@@ -1,0 +1,14 @@
+button:
+  about: About
+  back: Back
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+  my-blog: Mi Blog
+intro:
+  desc: Plantilla de inicio de Vite con opiniones. Personalizado para admitir el patrón de arquitectura modular.
+my: Mi
+not-found: Not found
+i-am-available: Estoy disponible
+i-am-not-available: No estoy disponible
+lets-talk: Hablemos

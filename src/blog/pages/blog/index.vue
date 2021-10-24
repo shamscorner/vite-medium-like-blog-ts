@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import data from './data.json'
+const { t } = useI18n()
 
 interface Article {
   title: string
@@ -21,7 +22,7 @@ const heroArticle = ref(dataArticles.length > 0 ? dataArticles[0] : null)
 <template>
   <div>
     <h1 class="mx-3 mt-8 text-4xl font-bold sm:text-5xl text-gold-dark">
-      <span class="text-green-500">My</span> Blog
+      <span class="text-green-500">{{ t('my') }}</span> Blog
     </h1>
     <div class="w-40 h-2 mt-3 mb-8 ml-3 rounded-full bg-gold-dark"></div>
     <!-- latest blog -->

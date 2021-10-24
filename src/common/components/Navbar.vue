@@ -1,7 +1,10 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+
 const email = ref('john@example.com')
 const isAvailable = ref(true)
-const availableText = computed(() => isAvailable.value ? 'I\'m available' : 'I\'m not available')
+const availableText = computed(() => isAvailable.value ? t('i-am-available') : t('i-am-not-available'))
 </script>
 
 <template>
@@ -64,7 +67,7 @@ const availableText = computed(() => isAvailable.value ? 'I\'m available' : 'I\'
         </svg>
       </router-link>
       <a href="https://www.shamscorner.com/" target="_blank" class="hidden sm:block outline-none">
-        <VButton>Let's Talk</VButton>
+        <VButton>{{ t('lets-talk') }}</VButton>
       </a>
     </div>
     <!-- end of right container -->
